@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from './components/Nav'
 import Section1 from './components/Section1'
 import Card from './components/Card';
+import Form from './components/form';
 const users = [
   {
     name: "Rahul Sharma",
@@ -64,6 +65,10 @@ const users = [
     email: "meera.iyer@email.com"
   }
 ];
+
+
+
+
 const App = () => {
   return (
    <>
@@ -72,6 +77,7 @@ const App = () => {
    {users.map((elem)=>{
     return <Card user={elem}/>
    })}
+   <Form />
    </>
   )
 }
