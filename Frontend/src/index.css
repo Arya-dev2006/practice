@@ -28,16 +28,25 @@ html,body{
   padding-block: 0.2rem;
   border-radius: 1rem;
 }
-
+.booking-button {
+  background-color:rgb(24, 24, 47) ;
+  padding: 0.4rem 1.3rem 0.4rem 1.3rem;
+  border-radius: 1rem;
+  
+}
+.booking-button h2{
+  font-weight: 100;
+  color: whitesmoke;
+  font-size: 1.1rem;
+}
 #section1{
   height: calc(100vh - 85.6px);
   width: 100%;
-  background-image: url('https://images.pexels.com/photos/8380028/pexels-photo-8380028.jpeg');
+  background-image: url('https://images.pexels.com/photos/8224684/pexels-photo-8224684.jpeg');
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
   
+
 
 }
 #center{
@@ -45,4 +54,95 @@ html,body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
+  height: 75vh;
+  
+}
+#center h1{
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+#center p{
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.subtitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+button{
+  background-color: rgb(27, 27, 53);
+  color: whitesmoke;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+#bottom{
+  display: flex;
+  justify-content: space-between;
+}
+#text{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 1rem;
+}
+#text p{
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+#icons{
+  width: 9vw;
+  height:8.2vh;
+  background-color: rgba(255, 255, 255, 0.081);
+  backdrop-filter: blur(15px);
+  display: flex;
+  position: relative;
+  padding-top: 0.4rem;
+  padding-inline: 2rem;
+  border-radius: 2rem;
+ 
+}
+#icons .images:nth-child(1){
+  left: 12%;
+  background-image: url('https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg');
+  background-position: top;
+  background-size: cover;
+}
+#icons .images:nth-child(2){
+  left: 32%;
+  background-image: url('https://images.pexels.com/photos/40901/lingerie-girl-sexy-beauty-40901.jpeg');
+  background-position: top;
+  background-size: cover;
+}
+#icons .images:nth-child(3){
+  left: 52%;
+  background-image: url('https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg');
+  background-position: top;
+  background-size: cover;
+}
+.images{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: absolute;
+}
+#socials{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 3rem;
+}
+.social-links{
+  background-color: rgba(240, 248, 255, 0.252);
+  backdrop-filter: blur(15px);
+  padding-inline: 1rem;
+  padding-block: 0.4rem;
+  border-radius: 2rem;
 }
