@@ -3,6 +3,7 @@ import Nav from './components/Nav'
 import Section1 from './components/Section1'
 import Card from './components/Card';
 import Form from './components/form';
+import {Routes , Route } from 'react-router-dom'
 const users = [
   {
     name: "Rahul Sharma",
@@ -73,11 +74,14 @@ const App = () => {
   return (
    <>
    <Nav />
-   <Section1 />
+   
+  
+   <Routes>
+    <Route path='/abc' element={<Section1 />} />
+   </Routes>
    {users.map((elem)=>{
     return <Card user={elem}/>
    })}
-   <Form />
    </>
   )
 }

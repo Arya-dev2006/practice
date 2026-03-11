@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Nav = () => {
   return (
@@ -6,7 +7,7 @@ const Nav = () => {
       <div id="Nav">
         <h1>Horizon Courts</h1>
         <div className="links">
-            <p>about us</p>
+          <Link to='/abc'><p>about us</p></Link>
             <p>services</p>
             <p>coaches</p>
             <p>events</p>
