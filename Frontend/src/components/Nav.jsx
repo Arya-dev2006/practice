@@ -7,7 +7,7 @@ const Nav = () => {
       <div id="Nav">
         <h1>Horizon Courts</h1>
         <div className="links">
-          <Link to='/abc'><p>about us</p></Link>
+          <Link to='/global'><p>about us</p></Link>
             <p>services</p>
             <p>coaches</p>
             <p>events</p>

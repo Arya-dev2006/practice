@@ -4,6 +4,9 @@ import Section1 from './components/Section1'
 import Card from './components/Card';
 import Form from './components/form';
 import {Routes , Route } from 'react-router-dom'
+import Global from './components/Global';
+import Men from './components/Men';
+import Women from './components/Women';
 const users = [
   {
     name: "Rahul Sharma",
@@ -74,14 +77,16 @@ const App = () => {
   return (
    <>
    <Nav />
-   
-  
+   <Section1 />
    <Routes>
-    <Route path='/abc' element={<Section1 />} />
+
+    <Route path='/global' element={<Global />}>
+      <Route path = '/global/men' element={<Men />}/>
+      <Route path = '/global/women' element={<Women/>}/>
+     </Route>
+
    </Routes>
-   {users.map((elem)=>{
-    return <Card user={elem}/>
-   })}
+ 
    </>
   )
 }
